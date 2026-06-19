@@ -1,0 +1,579 @@
+# vsim work.top -l result.log -sv_lib C:/questasim_10.4e/uvm-1.1c/win32/uvm_dpi -voptargs="+acc" "+UVM_TESTNAME=pcie_single_write_read_aligned_test" 
+# Start time: 10:40:44 on Jun 19,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "ddr5_bank_scheduler(fast)".
+# 
+# ** Note: (vopt-143) Recognized 1 FSM in module "ddr5_phy(fast)".
+# 
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.tb_run_sv_unit(fast)
+# Loading work.top(fast)
+# Loading work.ddr5_pkg(fast)
+# Loading work.run_sv_unit(fast)
+# Loading work.axi_pcie_intf(fast__1)
+# Loading work.axi_cfg_intf(fast__1)
+# Loading work.dfi5_if(fast__1)
+# Loading work.ddr5_mem_if_sv_unit(fast)
+# Loading work.mem_if(fast__1)
+# Loading work.axi64_to_dut512_bridge(fast)
+# Loading work.ddr5_ctrl_top(fast)
+# Loading work.ddr5_init_fsm(fast)
+# Loading work.ddr5_axi_frontend_clean(fast)
+# Loading work.ddr5_sub_ch_demux(fast)
+# Loading work.ddr5_refresh_engine(fast)
+# Loading work.ddr5_bank_scheduler(fast)
+# Loading work.ddr5_cmd_encoder(fast)
+# Loading work.ddr5_phy(fast)
+# Loading work.ddr5_zq_cal(fast)
+# Loading work.ddr5_sv_unit(fast)
+# Loading work.ddr5(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.axi_pcie_intf(fast)
+# Loading work.axi_cfg_intf(fast)
+# Loading C:/questasim_10.4e/uvm-1.1c/win32/uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0.0 ps: reporter [RNTST] Running test pcie_single_write_read_aligned_test...
+# [DDR5 MODEL] DCH pin=1 selects CH1 time=0.0 ps
+# UVM_INFO ./AXI_Master_VIP/virtual_sequence.sv(85) @ 0.0 ps: uvm_test_top.sqr@@vseq_single_write_read_aligned_sequence [VSEQ] Starting PCIe Back-to-Back Write-Read
+# [AXI 64 to 512 bridge] pack_data is 0 wr_count is 0 at time 7500.0 ps
+# [AXI 64 to 512 bridge] pack_data is 6390c8fb9684409a wr_count is 1 at time 8750.0 ps
+# [AXI 64 to 512 bridge] pack_data is 27f9de53c4cb09c6390c8fb9684409a wr_count is 2 at time 10000.0 ps
+# [AXI 64 to 512 bridge] pack_data is 423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a wr_count is 3 at time 11250.0 ps
+# [AXI 64 to 512 bridge] pack_data is b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a wr_count is 4 at time 12500.0 ps
+# [AXI 64 to 512 bridge] pack_data is aa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a wr_count is 5 at time 13750.0 ps
+# [AXI 64 to 512 bridge] pack_data is 5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a wr_count is 6 at time 15000.0 ps
+# [AXI 64 to 512 bridge] pack_data is 887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a wr_count is 7 at time 16250.0 ps
+# [DDR5] tINIT1 SIM-SAT: RESET_n stayed LOW for 370032.0 ps; JEDEC target=200000000.0 ps, model gate=10000.0 ps at 370032.0 ps
+# [CH0] tINIT2 SATISFIED: CS_n stayed LOW for 370032.0 ps before RESET_n deassert at 370032.0 ps
+# [CH1] tINIT2 SATISFIED: CS_n stayed LOW for 370032.0 ps before RESET_n deassert at 370032.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 383448.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 383448.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 384072.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 384072.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 384696.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 384696.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 385320.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 385320.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 385944.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 385944.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 386568.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 386568.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 387192.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 387192.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 387816.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 387816.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 388440.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 388440.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 389064.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 389064.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 389688.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 389688.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 390312.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 390312.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 390936.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 390936.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 391560.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 391560.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 392184.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 392184.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 392808.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 392808.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 393432.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 393432.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 394056.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 394056.0 ps
+# [CH0] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 394680.0 ps
+# [CH1] RESET-INIT BLOCK: CA=0x3fff ignored because tINIT3 (post-reset CS_n LOW hold) is not complete at 394680.0 ps
+# [CH0] tINIT3 SIM-SAT: CS_n stayed LOW for 25000.0 ps after RESET_n deassert; JEDEC target=4000000000.0 ps, model gate=20000.0 ps at 395032.0 ps
+# [CH1] tINIT3 SIM-SAT: CS_n stayed LOW for 25000.0 ps after RESET_n deassert; JEDEC target=4000000000.0 ps, model gate=20000.0 ps at 395032.0 ps
+# [CH0] tINIT4 SIM-SAT: CS_n stayed HIGH for 1520.0 ps; JEDEC target=2000000.0 ps, model gate=1000.0 ps at 396552.0 ps
+# [CH0] tINIT5 START: counting 3 NOP clock edges from ck_cnt=42 at 396552.0 ps
+# [CH1] tINIT4 SIM-SAT: CS_n stayed HIGH for 1520.0 ps; JEDEC target=2000000.0 ps, model gate=1000.0 ps at 396552.0 ps
+# [CH1] tINIT5 START: counting 3 NOP clock edges from ck_cnt=42 at 396552.0 ps
+# [CH0] tINIT5 SATISFIED: 3 NOP clock edges observed after tINIT4 at 398424.0 ps
+# [CH0] RESET INIT DONE: tINIT5 complete, so MRW to MR0 and normal command decode are now legal at 398424.0 ps
+# [CH1] tINIT5 SATISFIED: 3 NOP clock edges observed after tINIT4 at 398424.0 ps
+# [CH1] RESET INIT DONE: tINIT5 complete, so MRW to MR0 and normal command decode are now legal at 398424.0 ps
+# [CH0] NOP at 682968.0 ps
+# [CH1] NOP at 682968.0 ps
+# [CH0] NOP at 844584.0 ps
+# [CH1] NOP at 844584.0 ps
+# [CH0] MRW Cy1 MR=0 at 855816.0 ps
+# [CH1] MRW Cy1 MR=0 at 855816.0 ps
+# [CH0] MRW MR0 <= 0x24 at 856440.0 ps
+# [CH0] MR0: CL=40 CWL=38 BL=16 at 856440.0 ps
+# [CH1] MRW MR0 <= 0x24 at 856440.0 ps
+# [CH1] MR0: CL=40 CWL=38 BL=16 at 856440.0 ps
+# [CH0] MRW Cy1 MR=1 at 862056.0 ps
+# [CH1] MRW Cy1 MR=1 at 862056.0 ps
+# [CH0] MRW MR1 <= 0x00 at 862680.0 ps
+# [CH1] MRW MR1 <= 0x00 at 862680.0 ps
+# [CH0] MRW Cy1 MR=2 at 868296.0 ps
+# [CH1] MRW Cy1 MR=2 at 868296.0 ps
+# [CH0] MRW MR2 <= 0x28 at 868920.0 ps
+# [CH1] MRW MR2 <= 0x28 at 868920.0 ps
+# [CH0] MRW Cy1 MR=3 at 874536.0 ps
+# [CH1] MRW Cy1 MR=3 at 874536.0 ps
+# [CH0] MRW MR3 <= 0x24 at 875160.0 ps
+# [CH1] MRW MR3 <= 0x24 at 875160.0 ps
+# [CH0] MRW Cy1 MR=4 at 880776.0 ps
+# [CH1] MRW Cy1 MR=4 at 880776.0 ps
+# [CH0] MRW MR4 <= 0x02 at 881400.0 ps
+# [CH1] MRW MR4 <= 0x02 at 881400.0 ps
+# [CH0] MRW Cy1 MR=5 at 887016.0 ps
+# [CH1] MRW Cy1 MR=5 at 887016.0 ps
+# [CH0] MRW MR5 <= 0x00 at 887640.0 ps
+# [CH1] MRW MR5 <= 0x00 at 887640.0 ps
+# [CH0] MRW Cy1 MR=6 at 893256.0 ps
+# [CH1] MRW Cy1 MR=6 at 893256.0 ps
+# [CH0] MRW MR6 <= 0x00 at 893880.0 ps
+# [DUAL-CH] INIT DONE at 893880.0 ps  CL=40 CWL=38 RL=40 WL=38 BL=16
+# [CH1] MRW MR6 <= 0x00 at 893880.0 ps
+# [CTRL][AW]       t=1133000.0 ps addr=a5c3adb8 id=8 len=0
+# [CTRL][W]        t=1134000.0 ps wdata=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a wstrb=ffffffffffffffff wlast=1
+# [CTRL][CMD_CH1]  t=1138000.0 ps cmd=CMD_ACT bg=3 ba=2 row=a5c3 col=0
+# [CH1] ACT Cy1 bank=14 CA=0x038c at 1137864.0 ps
+# [CH1] ACT bank=14 row=0xa5c3 at 1138488.0 ps
+# [DDR5 DEMUX][REQ_ACCEPTED] t=1151000.0 ps req_is_wr=1 req_addr=a5c3adb8 req_id=8
+# [DDR5 DEMUX][DECODE] bg=3 ba=2 row=a5c3 col=1b6 ch0_valid=0 ch1_valid=1 ch0_ready=0 ch1_ready=1
+# [DDR5 DEMUX][WRITE_FULL] req_wdata[511:0]=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a req_wstrb[63:0]=ffffffffffffffff
+# [DDR5 DEMUX][WRITE_CH0] ch0_id=8 ch0_wdata[511:0]=0 ch0_wstrb[63:0]=0
+# [DDR5 DEMUX][WRITE_CH1] ch1_id=8 ch1_wdata[511:0]=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a ch1_wstrb[63:0]=ffffffffffffffff
+# [CTRL][FE_REQ]   t=1151000.0 ps is_wr=1 addr=a5c3adb8
+# [CTRL][CMD_CH1]  t=1151000.0 ps cmd=CMD_WR bg=3 ba=2 row=0 col=1b6
+# [CH1] WR Cy1 bank=14 at 1151592.0 ps
+# [CH1] WR Cy2 bank=14 row=0xa5c3 col=0x1b0 AP=0 at 1152216.0 ps
+# [CTRL][B]        t=1153000.0 ps bid=8 bresp=0
+# UVM_INFO ./AXI_Master_VIP/virtual_sequence.sv(87) @ 1155000.0 ps: uvm_test_top.sqr@@vseq_single_write_read_aligned_sequence [VSEQ] Completed PCIe Back-to-Back Write-Read
+# [CH1] pipeline[0] fired wr=1 rd=0 time=1176240.0 ps
+# [CTRL][DFI_WR]   t=1181000.0 ps ch0_wrdata_w0=0 ch1_wrdata_w0=9684409a en=0
+# MEMORY MODEL DQS dq64=9684409affffffff  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1181250.0 ps
+# [CH1] DQS fall lane=3 dq64=9684409affffffff selected_dq32=9684409a mask=000000000000000000000000ff000000 dq_neg=00000000000000000000000096000000 time=1181250.0 ps
+# [CH1] DQS fall lane=2 dq64=9684409affffffff selected_dq32=9684409a mask=00000000000000000000000000ff0000 dq_neg=00000000000000000000000096840000 time=1181250.0 ps
+# [CH1] DQS fall lane=1 dq64=9684409affffffff selected_dq32=9684409a mask=0000000000000000000000000000ff00 dq_neg=00000000000000000000000096844000 time=1181250.0 ps
+# [CH1] DQS fall lane=0 dq64=9684409affffffff selected_dq32=9684409a mask=000000000000000000000000000000ff dq_neg=0000000000000000000000009684409a time=1181250.0 ps
+# [CH1 | FALLING EDGE] DQS capture mask=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffff data=0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009684409a pos=0 time=1181544.0 ps
+# [CH1 | EDGE-0] WRITE BEAT bg=3 ba=2 row=0a5c3 col_beat=00001b0  dq64=9684409affffffff selected_dq32=9684409a  time=1181544.0 ps
+# MEMORY MODEL DQS dq64=6390c8fbffffffff  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=f dqs_c=0  time=1182500.0 ps
+# [CH1] DQS rise lane=3 dq64=6390c8fbffffffff selected_dq32=6390c8fb mask=000000000000000000000000ff000000 dq_pos=00000000000000000000000063000000 time=1182500.0 ps
+# [CH1] DQS rise lane=2 dq64=6390c8fbffffffff selected_dq32=6390c8fb mask=00000000000000000000000000ff0000 dq_pos=00000000000000000000000063900000 time=1182500.0 ps
+# [CH1] DQS rise lane=1 dq64=6390c8fbffffffff selected_dq32=6390c8fb mask=0000000000000000000000000000ff00 dq_pos=0000000000000000000000006390c800 time=1182500.0 ps
+# [CH1] DQS rise lane=0 dq64=6390c8fbffffffff selected_dq32=6390c8fb mask=000000000000000000000000000000ff dq_pos=0000000000000000000000006390c8fb time=1182500.0 ps
+# [CH1 | RISING EDGE ] DQS capture mask=0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffff00000000 data=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006390c8fb9684409a pos=1 time=1182792.0 ps
+# [CH1 | EDGE-1] WRITE BEAT bg=3 ba=2 row=0a5c3 col_beat=00001b1  dq64=6390c8fbffffffff selected_dq32=6390c8fb  time=1182792.0 ps
+# MEMORY MODEL DQS dq64=3c4cb09cffffffff  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1183750.0 ps
+# [CH1] DQS fall lane=3 dq64=3c4cb09cffffffff selected_dq32=3c4cb09c mask=000000000000000000000000ff000000 dq_neg=0000000000000000000000003c000000 time=1183750.0 ps
+# [CH1] DQS fall lane=2 dq64=3c4cb09cffffffff selected_dq32=3c4cb09c mask=00000000000000000000000000ff0000 dq_neg=0000000000000000000000003c4c0000 time=1183750.0 ps
+# [CH1] DQS fall lane=1 dq64=3c4cb09cffffffff selected_dq32=3c4cb09c mask=0000000000000000000000000000ff00 dq_neg=0000000000000000000000003c4cb000 time=1183750.0 ps
+# [CH1] DQS fall lane=0 dq64=3c4cb09cffffffff selected_dq32=3c4cb09c mask=000000000000000000000000000000ff dq_neg=0000000000000000000000003c4cb09c time=1183750.0 ps
+# [CH1 | FALLING EDGE] DQS capture mask=00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffff0000000000000000 data=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003c4cb09c6390c8fb9684409a pos=2 time=1184040.0 ps
+# [CH1 | EDGE-2] WRITE BEAT bg=3 ba=2 row=0a5c3 col_beat=00001b2  dq64=3c4cb09cffffffff selected_dq32=3c4cb09c  time=1184040.0 ps
+# MEMORY MODEL DQS dq64=027f9de5ffffffff  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=f dqs_c=0  time=1185000.0 ps
+# [CH1] DQS rise lane=3 dq64=027f9de5ffffffff selected_dq32=027f9de5 mask=000000000000000000000000ff000000 dq_pos=00000000000000000000000002000000 time=1185000.0 ps
+# [CH1] DQS rise lane=2 dq64=027f9de5ffffffff selected_dq32=027f9de5 mask=00000000000000000000000000ff0000 dq_pos=000000000000000000000000027f0000 time=1185000.0 ps
+# [CH1] DQS rise lane=1 dq64=027f9de5ffffffff selected_dq32=027f9de5 mask=0000000000000000000000000000ff00 dq_pos=000000000000000000000000027f9d00 time=1185000.0 ps
+# [CH1] DQS rise lane=0 dq64=027f9de5ffffffff selected_dq32=027f9de5 mask=000000000000000000000000000000ff dq_pos=000000000000000000000000027f9de5 time=1185000.0 ps
+# [CH1 | RISING EDGE ] DQS capture mask=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffff000000000000000000000000 data=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000027f9de53c4cb09c6390c8fb9684409a pos=3 time=1185288.0 ps
+# [CH1 | EDGE-3] WRITE BEAT bg=3 ba=2 row=0a5c3 col_beat=00001b3  dq64=027f9de5ffffffff selected_dq32=027f9de5  time=1185288.0 ps
+# MEMORY MODEL DQS dq64=ded4df78ffffffff  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1186250.0 ps
+# [CH1] DQS fall lane=3 dq64=ded4df78ffffffff selected_dq32=ded4df78 mask=000000000000000000000000ff000000 dq_neg=000000000000000000000000de000000 time=1186250.0 ps
+# [CH1] DQS fall lane=2 dq64=ded4df78ffffffff selected_dq32=ded4df78 mask=00000000000000000000000000ff0000 dq_neg=000000000000000000000000ded40000 time=1186250.0 ps
+# [CH1] DQS fall lane=1 dq64=ded4df78ffffffff selected_dq32=ded4df78 mask=0000000000000000000000000000ff00 dq_neg=000000000000000000000000ded4df00 time=1186250.0 ps
+# [CH1] DQS fall lane=0 dq64=ded4df78ffffffff selected_dq32=ded4df78 mask=000000000000000000000000000000ff dq_neg=000000000000000000000000ded4df78 time=1186250.0 ps
+# [CH1 | FALLING EDGE] DQS capture mask=0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffff00000000000000000000000000000000 data=0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ded4df78027f9de53c4cb09c6390c8fb9684409a pos=4 time=1186536.0 ps
+# [CH1 | EDGE-4] WRITE BEAT bg=3 ba=2 row=0a5c3 col_beat=00001b4  dq64=ded4df78ffffffff selected_dq32=ded4df78  time=1186536.0 ps
+# MEMORY MODEL DQS dq64=423cb27cffffffff  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=f dqs_c=0  time=1187500.0 ps
+# [CH1] DQS rise lane=3 dq64=423cb27cffffffff selected_dq32=423cb27c mask=000000000000000000000000ff000000 dq_pos=00000000000000000000000042000000 time=1187500.0 ps
+# [CH1] DQS rise lane=2 dq64=423cb27cffffffff selected_dq32=423cb27c mask=00000000000000000000000000ff0000 dq_pos=000000000000000000000000423c0000 time=1187500.0 ps
+# [CH1] DQS rise lane=1 dq64=423cb27cffffffff selected_dq32=423cb27c mask=0000000000000000000000000000ff00 dq_pos=000000000000000000000000423cb200 time=1187500.0 ps
+# [CH1] DQS rise lane=0 dq64=423cb27cffffffff selected_dq32=423cb27c mask=000000000000000000000000000000ff dq_pos=000000000000000000000000423cb27c time=1187500.0 ps
+# [CH1 | RISING EDGE ] DQS capture mask=00000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffff0000000000000000000000000000000000000000 data=00000000000000000000000000000000000000000000000000000000000000000000000000000000423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a pos=5 time=1187784.0 ps
+# [CH1 | EDGE-5] WRITE BEAT bg=3 ba=2 row=0a5c3 col_beat=00001b5  dq64=423cb27cffffffff selected_dq32=423cb27c  time=1187784.0 ps
+# MEMORY MODEL DQS dq64=3f6475b0ffffffff  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1188750.0 ps
+# [CH1] DQS fall lane=3 dq64=3f6475b0ffffffff selected_dq32=3f6475b0 mask=000000000000000000000000ff000000 dq_neg=0000000000000000000000003f000000 time=1188750.0 ps
+# [CH1] DQS fall lane=2 dq64=3f6475b0ffffffff selected_dq32=3f6475b0 mask=00000000000000000000000000ff0000 dq_neg=0000000000000000000000003f640000 time=1188750.0 ps
+# [CH1] DQS fall lane=1 dq64=3f6475b0ffffffff selected_dq32=3f6475b0 mask=0000000000000000000000000000ff00 dq_neg=0000000000000000000000003f647500 time=1188750.0 ps
+# [CH1] DQS fall lane=0 dq64=3f6475b0ffffffff selected_dq32=3f6475b0 mask=000000000000000000000000000000ff dq_neg=0000000000000000000000003f6475b0 time=1188750.0 ps
+# [CH1 | FALLING EDGE] DQS capture mask=000000000000000000000000000000000000000000000000000000000000000000000000ffffffff000000000000000000000000000000000000000000000000 data=0000000000000000000000000000000000000000000000000000000000000000000000003f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a pos=6 time=1189032.0 ps
+# [CH1 | EDGE-6] WRITE BEAT bg=3 ba=2 row=0a5c3 col_beat=00001b6  dq64=3f6475b0ffffffff selected_dq32=3f6475b0  time=1189032.0 ps
+# MEMORY MODEL DQS dq64=b7a8d818ffffffff  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=f dqs_c=0  time=1190000.0 ps
+# [CH1] DQS rise lane=3 dq64=b7a8d818ffffffff selected_dq32=b7a8d818 mask=000000000000000000000000ff000000 dq_pos=000000000000000000000000b7000000 time=1190000.0 ps
+# [CH1] DQS rise lane=2 dq64=b7a8d818ffffffff selected_dq32=b7a8d818 mask=00000000000000000000000000ff0000 dq_pos=000000000000000000000000b7a80000 time=1190000.0 ps
+# [CH1] DQS rise lane=1 dq64=b7a8d818ffffffff selected_dq32=b7a8d818 mask=0000000000000000000000000000ff00 dq_pos=000000000000000000000000b7a8d800 time=1190000.0 ps
+# [CH1] DQS rise lane=0 dq64=b7a8d818ffffffff selected_dq32=b7a8d818 mask=000000000000000000000000000000ff dq_pos=000000000000000000000000b7a8d818 time=1190000.0 ps
+# [CH1 | RISING EDGE ] DQS capture mask=0000000000000000000000000000000000000000000000000000000000000000ffffffff00000000000000000000000000000000000000000000000000000000 data=0000000000000000000000000000000000000000000000000000000000000000b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a pos=7 time=1190280.0 ps
+# [CH1 | EDGE-7] WRITE BEAT bg=3 ba=2 row=0a5c3 col_beat=00001b7  dq64=b7a8d818ffffffff selected_dq32=b7a8d818  time=1190280.0 ps
+# MEMORY MODEL DQS dq64=c5db1eb4ffffffff  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1191250.0 ps
+# [CH1] DQS fall lane=3 dq64=c5db1eb4ffffffff selected_dq32=c5db1eb4 mask=000000000000000000000000ff000000 dq_neg=000000000000000000000000c5000000 time=1191250.0 ps
+# [CH1] DQS fall lane=2 dq64=c5db1eb4ffffffff selected_dq32=c5db1eb4 mask=00000000000000000000000000ff0000 dq_neg=000000000000000000000000c5db0000 time=1191250.0 ps
+# [CH1] DQS fall lane=1 dq64=c5db1eb4ffffffff selected_dq32=c5db1eb4 mask=0000000000000000000000000000ff00 dq_neg=000000000000000000000000c5db1e00 time=1191250.0 ps
+# [CH1] DQS fall lane=0 dq64=c5db1eb4ffffffff selected_dq32=c5db1eb4 mask=000000000000000000000000000000ff dq_neg=000000000000000000000000c5db1eb4 time=1191250.0 ps
+# [CH1 | FALLING EDGE] DQS capture mask=00000000000000000000000000000000000000000000000000000000ffffffff0000000000000000000000000000000000000000000000000000000000000000 data=00000000000000000000000000000000000000000000000000000000c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a pos=8 time=1191528.0 ps
+# [CH1 | EDGE-8] WRITE BEAT bg=3 ba=2 row=0a5c3 col_beat=00001b8  dq64=c5db1eb4ffffffff selected_dq32=c5db1eb4  time=1191528.0 ps
+# MEMORY MODEL DQS dq64=aa61c4d1ffffffff  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=f dqs_c=0  time=1192500.0 ps
+# [CH1] DQS rise lane=3 dq64=aa61c4d1ffffffff selected_dq32=aa61c4d1 mask=000000000000000000000000ff000000 dq_pos=000000000000000000000000aa000000 time=1192500.0 ps
+# [CH1] DQS rise lane=2 dq64=aa61c4d1ffffffff selected_dq32=aa61c4d1 mask=00000000000000000000000000ff0000 dq_pos=000000000000000000000000aa610000 time=1192500.0 ps
+# [CH1] DQS rise lane=1 dq64=aa61c4d1ffffffff selected_dq32=aa61c4d1 mask=0000000000000000000000000000ff00 dq_pos=000000000000000000000000aa61c400 time=1192500.0 ps
+# [CH1] DQS rise lane=0 dq64=aa61c4d1ffffffff selected_dq32=aa61c4d1 mask=000000000000000000000000000000ff dq_pos=000000000000000000000000aa61c4d1 time=1192500.0 ps
+# [CH1 | RISING EDGE ] DQS capture mask=000000000000000000000000000000000000000000000000ffffffff000000000000000000000000000000000000000000000000000000000000000000000000 data=000000000000000000000000000000000000000000000000aa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a pos=9 time=1192776.0 ps
+# [CH1 | EDGE-9] WRITE BEAT bg=3 ba=2 row=0a5c3 col_beat=00001b9  dq64=aa61c4d1ffffffff selected_dq32=aa61c4d1  time=1192776.0 ps
+# MEMORY MODEL DQS dq64=0b928c9bffffffff  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1193750.0 ps
+# [CH1] DQS fall lane=3 dq64=0b928c9bffffffff selected_dq32=0b928c9b mask=000000000000000000000000ff000000 dq_neg=0000000000000000000000000b000000 time=1193750.0 ps
+# [CH1] DQS fall lane=2 dq64=0b928c9bffffffff selected_dq32=0b928c9b mask=00000000000000000000000000ff0000 dq_neg=0000000000000000000000000b920000 time=1193750.0 ps
+# [CH1] DQS fall lane=1 dq64=0b928c9bffffffff selected_dq32=0b928c9b mask=0000000000000000000000000000ff00 dq_neg=0000000000000000000000000b928c00 time=1193750.0 ps
+# [CH1] DQS fall lane=0 dq64=0b928c9bffffffff selected_dq32=0b928c9b mask=000000000000000000000000000000ff dq_neg=0000000000000000000000000b928c9b time=1193750.0 ps
+# [CH1 | FALLING EDGE] DQS capture mask=0000000000000000000000000000000000000000ffffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000 data=00000000000000000000000000000000000000000b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a pos=a time=1194024.0 ps
+# [CH1 | EDGE-10] WRITE BEAT bg=3 ba=2 row=0a5c3 col_beat=00001ba  dq64=0b928c9bffffffff selected_dq32=0b928c9b  time=1194024.0 ps
+# MEMORY MODEL DQS dq64=5a22698fffffffff  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=f dqs_c=0  time=1195000.0 ps
+# [CH1] DQS rise lane=3 dq64=5a22698fffffffff selected_dq32=5a22698f mask=000000000000000000000000ff000000 dq_pos=0000000000000000000000005a000000 time=1195000.0 ps
+# [CH1] DQS rise lane=2 dq64=5a22698fffffffff selected_dq32=5a22698f mask=00000000000000000000000000ff0000 dq_pos=0000000000000000000000005a220000 time=1195000.0 ps
+# [CH1] DQS rise lane=1 dq64=5a22698fffffffff selected_dq32=5a22698f mask=0000000000000000000000000000ff00 dq_pos=0000000000000000000000005a226900 time=1195000.0 ps
+# [CH1] DQS rise lane=0 dq64=5a22698fffffffff selected_dq32=5a22698f mask=000000000000000000000000000000ff dq_pos=0000000000000000000000005a22698f time=1195000.0 ps
+# [CH1 | RISING EDGE ] DQS capture mask=00000000000000000000000000000000ffffffff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 data=000000000000000000000000000000005a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a pos=b time=1195272.0 ps
+# [CH1 | EDGE-11] WRITE BEAT bg=3 ba=2 row=0a5c3 col_beat=00001bb  dq64=5a22698fffffffff selected_dq32=5a22698f  time=1195272.0 ps
+# MEMORY MODEL DQS dq64=0ee3bcdbffffffff  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1196250.0 ps
+# [CH1] DQS fall lane=3 dq64=0ee3bcdbffffffff selected_dq32=0ee3bcdb mask=000000000000000000000000ff000000 dq_neg=0000000000000000000000000e000000 time=1196250.0 ps
+# [CH1] DQS fall lane=2 dq64=0ee3bcdbffffffff selected_dq32=0ee3bcdb mask=00000000000000000000000000ff0000 dq_neg=0000000000000000000000000ee30000 time=1196250.0 ps
+# [CH1] DQS fall lane=1 dq64=0ee3bcdbffffffff selected_dq32=0ee3bcdb mask=0000000000000000000000000000ff00 dq_neg=0000000000000000000000000ee3bc00 time=1196250.0 ps
+# [CH1] DQS fall lane=0 dq64=0ee3bcdbffffffff selected_dq32=0ee3bcdb mask=000000000000000000000000000000ff dq_neg=0000000000000000000000000ee3bcdb time=1196250.0 ps
+# [CH1 | FALLING EDGE] DQS capture mask=000000000000000000000000ffffffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 data=0000000000000000000000000ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a pos=c time=1196520.0 ps
+# [CH1 | EDGE-12] WRITE BEAT bg=3 ba=2 row=0a5c3 col_beat=00001bc  dq64=0ee3bcdbffffffff selected_dq32=0ee3bcdb  time=1196520.0 ps
+# MEMORY MODEL DQS dq64=887a3696ffffffff  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=f dqs_c=0  time=1197500.0 ps
+# [CH1] DQS rise lane=3 dq64=887a3696ffffffff selected_dq32=887a3696 mask=000000000000000000000000ff000000 dq_pos=00000000000000000000000088000000 time=1197500.0 ps
+# [CH1] DQS rise lane=2 dq64=887a3696ffffffff selected_dq32=887a3696 mask=00000000000000000000000000ff0000 dq_pos=000000000000000000000000887a0000 time=1197500.0 ps
+# [CH1] DQS rise lane=1 dq64=887a3696ffffffff selected_dq32=887a3696 mask=0000000000000000000000000000ff00 dq_pos=000000000000000000000000887a3600 time=1197500.0 ps
+# [CH1] DQS rise lane=0 dq64=887a3696ffffffff selected_dq32=887a3696 mask=000000000000000000000000000000ff dq_pos=000000000000000000000000887a3696 time=1197500.0 ps
+# [CH1 | RISING EDGE ] DQS capture mask=0000000000000000ffffffff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 data=0000000000000000887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a pos=d time=1197768.0 ps
+# [CH1 | EDGE-13] WRITE BEAT bg=3 ba=2 row=0a5c3 col_beat=00001bd  dq64=887a3696ffffffff selected_dq32=887a3696  time=1197768.0 ps
+# MEMORY MODEL DQS dq64=7de84d2effffffff  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1198750.0 ps
+# [CH1] DQS fall lane=3 dq64=7de84d2effffffff selected_dq32=7de84d2e mask=000000000000000000000000ff000000 dq_neg=0000000000000000000000007d000000 time=1198750.0 ps
+# [CH1] DQS fall lane=2 dq64=7de84d2effffffff selected_dq32=7de84d2e mask=00000000000000000000000000ff0000 dq_neg=0000000000000000000000007de80000 time=1198750.0 ps
+# [CH1] DQS fall lane=1 dq64=7de84d2effffffff selected_dq32=7de84d2e mask=0000000000000000000000000000ff00 dq_neg=0000000000000000000000007de84d00 time=1198750.0 ps
+# [CH1] DQS fall lane=0 dq64=7de84d2effffffff selected_dq32=7de84d2e mask=000000000000000000000000000000ff dq_neg=0000000000000000000000007de84d2e time=1198750.0 ps
+# [CH1 | FALLING EDGE] DQS capture mask=00000000ffffffff0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 data=000000007de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a pos=e time=1199016.0 ps
+# [CH1 | EDGE-14] WRITE BEAT bg=3 ba=2 row=0a5c3 col_beat=00001be  dq64=7de84d2effffffff selected_dq32=7de84d2e  time=1199016.0 ps
+# MEMORY MODEL DQS dq64=a191c5f6ffffffff  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=f dqs_c=0  time=1200000.0 ps
+# [CH1] DQS rise lane=3 dq64=a191c5f6ffffffff selected_dq32=a191c5f6 mask=000000000000000000000000ff000000 dq_pos=000000000000000000000000a1000000 time=1200000.0 ps
+# [CH1] DQS rise lane=2 dq64=a191c5f6ffffffff selected_dq32=a191c5f6 mask=00000000000000000000000000ff0000 dq_pos=000000000000000000000000a1910000 time=1200000.0 ps
+# [CH1] DQS rise lane=1 dq64=a191c5f6ffffffff selected_dq32=a191c5f6 mask=0000000000000000000000000000ff00 dq_pos=000000000000000000000000a191c500 time=1200000.0 ps
+# [CH1] DQS rise lane=0 dq64=a191c5f6ffffffff selected_dq32=a191c5f6 mask=000000000000000000000000000000ff dq_pos=000000000000000000000000a191c5f6 time=1200000.0 ps
+# [CH1 | RISING EDGE ] DQS capture mask=ffffffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a pos=f time=1200264.0 ps
+# [CH1 | EDGE-15] WRITE BEAT bg=3 ba=2 row=0a5c3 col_beat=00001bf  dq64=a191c5f6ffffffff selected_dq32=a191c5f6  time=1200264.0 ps
+# ╔══════════════════════════════════════════════╗
+# ║  DUAL-CHANNEL MEMORY WRITE                   ║
+# ║  CHANNEL 1 (DQ[63:32] = UPPER 32 BITS)                    ║
+# ║  BG=3  BA=2  ROW=0a5c3  COL=1b0  ║
+# ║  CHANNEL_DATA_512 = a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a  ║
+# ╚══════════════════════════════════════════════╝
+# [CH1] WRITE addr/channel_data_512: addr=72970db data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a time=1200264.0 ps
+# [CH1] FULL BURST COMMITTED bg=3 ba=2 row=0a5c3 col=1b0  CHANNEL_DATA_512=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a  BUS64_BL16_1024=a191c5f6ffffffff7de84d2effffffff887a3696ffffffff0ee3bcdbffffffff5a22698fffffffff0b928c9bffffffffaa61c4d1ffffffffc5db1eb4ffffffffb7a8d818ffffffff3f6475b0ffffffff423cb27cffffffffded4df78ffffffff027f9de5ffffffff3c4cb09cffffffff6390c8fbffffffff9684409affffffff  time=1200264.0 ps
+# [CH1] DQS fall lane=3 dq64=zzzzzzzzzzzzzzzz selected_dq32=zzzzzzzz mask=000000000000000000000000ff000000 dq_neg=000000000000000000000000xxxxxxxx time=1201250.0 ps
+# [CH1] DQS fall lane=2 dq64=zzzzzzzzzzzzzzzz selected_dq32=zzzzzzzz mask=00000000000000000000000000ff0000 dq_neg=000000000000000000000000xxxxxxxx time=1201250.0 ps
+# [CH1] DQS fall lane=1 dq64=zzzzzzzzzzzzzzzz selected_dq32=zzzzzzzz mask=0000000000000000000000000000ff00 dq_neg=000000000000000000000000xxxxxxxx time=1201250.0 ps
+# [CH1] DQS fall lane=0 dq64=zzzzzzzzzzzzzzzz selected_dq32=zzzzzzzz mask=000000000000000000000000000000ff dq_neg=000000000000000000000000xxxxxxxx time=1201250.0 ps
+# [CTRL][CMD_CH1]  t=1213000.0 ps cmd=CMD_PRE bg=3 ba=2 row=0 col=0
+# [CH1] PREpb bank=14 at 1213368.0 ps
+# [CTRL][CMD_CH1]  t=1230000.0 ps cmd=CMD_ACT bg=3 ba=2 row=a5c3 col=0
+# [CH1] ACT Cy1 bank=14 CA=0x038c at 1230840.0 ps
+# [CH1] ACT bank=14 row=0xa5c3 at 1231464.0 ps
+# [DDR5 DEMUX][REQ_ACCEPTED] t=1244000.0 ps req_is_wr=0 req_addr=a5c3adb8 req_id=d
+# [DDR5 DEMUX][DECODE] bg=3 ba=2 row=a5c3 col=1b6 ch0_valid=0 ch1_valid=1 ch0_ready=0 ch1_ready=1
+# [DDR5 DEMUX][READ_REQ] ch0_id=d ch1_id=d
+# [CTRL][FE_REQ]   t=1244000.0 ps is_wr=0 addr=a5c3adb8
+# [CTRL][CMD_CH1]  t=1244000.0 ps cmd=CMD_RD bg=3 ba=2 row=0 col=1b6
+# [CH1] RD Cy1 bank=14 at 1244568.0 ps
+# [CH1] RD Cy2 bank=14 row=0xa5c3 col=0x1b0 AP=0 at 1245192.0 ps
+# MEMORY MODEL DQS dq64=zzzzzzzzzzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1269840.0 ps
+# [CH1] DQS fall lane=3 dq64=zzzzzzzzzzzzzzzz selected_dq32=zzzzzzzz mask=000000000000000000000000ff000000 dq_neg=000000000000000000000000xxxxxxxx time=1269840.0 ps
+# [CH1] DQS fall lane=2 dq64=zzzzzzzzzzzzzzzz selected_dq32=zzzzzzzz mask=00000000000000000000000000ff0000 dq_neg=000000000000000000000000xxxxxxxx time=1269840.0 ps
+# [CH1] DQS fall lane=1 dq64=zzzzzzzzzzzzzzzz selected_dq32=zzzzzzzz mask=0000000000000000000000000000ff00 dq_neg=000000000000000000000000xxxxxxxx time=1269840.0 ps
+# [CH1] DQS fall lane=0 dq64=zzzzzzzzzzzzzzzz selected_dq32=zzzzzzzz mask=000000000000000000000000000000ff dq_neg=000000000000000000000000xxxxxxxx time=1269840.0 ps
+# [CH1] pipeline[0] fired wr=0 rd=1 time=1270152.0 ps
+# [CH1] READ addr/data: addr=72970db data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a time=1270152.0 ps
+# -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# [CH1] MEMORY READ bg=3 ba=2 row=0a5c3 col=1b0 data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a time=1270152.0 ps
+# [CH1] READ OUTPUT data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a dq_out=9684409a burst_pos=0 time=1270152.0 ps
+# MEMORY MODEL DQS dq64=9684409azzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=f dqs_c=0  time=1270464.0 ps
+# [CH1] DQS rise lane=3 dq64=9684409azzzzzzzz selected_dq32=9684409a mask=000000000000000000000000ff000000 dq_pos=00000000000000000000000096000000 time=1270464.0 ps
+# [CH1] DQS rise lane=2 dq64=9684409azzzzzzzz selected_dq32=9684409a mask=00000000000000000000000000ff0000 dq_pos=00000000000000000000000096840000 time=1270464.0 ps
+# [CH1] DQS rise lane=1 dq64=9684409azzzzzzzz selected_dq32=9684409a mask=0000000000000000000000000000ff00 dq_pos=00000000000000000000000096844000 time=1270464.0 ps
+# [CH1] DQS rise lane=0 dq64=9684409azzzzzzzz selected_dq32=9684409a mask=000000000000000000000000000000ff dq_pos=0000000000000000000000009684409a time=1270464.0 ps
+# [CH1] READ OUTPUT data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a dq_out=6390c8fb burst_pos=1 time=1270464.0 ps
+# MEMORY MODEL DQS dq64=6390c8fbzzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1270776.0 ps
+# [CH1] DQS fall lane=3 dq64=6390c8fbzzzzzzzz selected_dq32=6390c8fb mask=000000000000000000000000ff000000 dq_neg=00000000000000000000000063000000 time=1270776.0 ps
+# [CH1] DQS fall lane=2 dq64=6390c8fbzzzzzzzz selected_dq32=6390c8fb mask=00000000000000000000000000ff0000 dq_neg=00000000000000000000000063900000 time=1270776.0 ps
+# [CH1] DQS fall lane=1 dq64=6390c8fbzzzzzzzz selected_dq32=6390c8fb mask=0000000000000000000000000000ff00 dq_neg=0000000000000000000000006390c800 time=1270776.0 ps
+# [CH1] DQS fall lane=0 dq64=6390c8fbzzzzzzzz selected_dq32=6390c8fb mask=000000000000000000000000000000ff dq_neg=0000000000000000000000006390c8fb time=1270776.0 ps
+# [CH1] READ OUTPUT data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a dq_out=3c4cb09c burst_pos=2 time=1270776.0 ps
+# MEMORY MODEL DQS dq64=3c4cb09czzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=f dqs_c=0  time=1271088.0 ps
+# [CH1] DQS rise lane=3 dq64=3c4cb09czzzzzzzz selected_dq32=3c4cb09c mask=000000000000000000000000ff000000 dq_pos=0000000000000000000000003c84409a time=1271088.0 ps
+# [CH1] DQS rise lane=2 dq64=3c4cb09czzzzzzzz selected_dq32=3c4cb09c mask=00000000000000000000000000ff0000 dq_pos=0000000000000000000000003c4c409a time=1271088.0 ps
+# [CH1] DQS rise lane=1 dq64=3c4cb09czzzzzzzz selected_dq32=3c4cb09c mask=0000000000000000000000000000ff00 dq_pos=0000000000000000000000003c4cb09a time=1271088.0 ps
+# [CH1] DQS rise lane=0 dq64=3c4cb09czzzzzzzz selected_dq32=3c4cb09c mask=000000000000000000000000000000ff dq_pos=0000000000000000000000003c4cb09c time=1271088.0 ps
+# [CH1] READ OUTPUT data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a dq_out=027f9de5 burst_pos=3 time=1271088.0 ps
+# MEMORY MODEL DQS dq64=027f9de5zzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1271400.0 ps
+# [CH1] DQS fall lane=3 dq64=027f9de5zzzzzzzz selected_dq32=027f9de5 mask=000000000000000000000000ff000000 dq_neg=0000000000000000000000000290c8fb time=1271400.0 ps
+# [CH1] DQS fall lane=2 dq64=027f9de5zzzzzzzz selected_dq32=027f9de5 mask=00000000000000000000000000ff0000 dq_neg=000000000000000000000000027fc8fb time=1271400.0 ps
+# [CH1] DQS fall lane=1 dq64=027f9de5zzzzzzzz selected_dq32=027f9de5 mask=0000000000000000000000000000ff00 dq_neg=000000000000000000000000027f9dfb time=1271400.0 ps
+# [CH1] DQS fall lane=0 dq64=027f9de5zzzzzzzz selected_dq32=027f9de5 mask=000000000000000000000000000000ff dq_neg=000000000000000000000000027f9de5 time=1271400.0 ps
+# [CH1] READ OUTPUT data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a dq_out=ded4df78 burst_pos=4 time=1271400.0 ps
+# MEMORY MODEL DQS dq64=ded4df78zzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=f dqs_c=0  time=1271712.0 ps
+# [CH1] DQS rise lane=3 dq64=ded4df78zzzzzzzz selected_dq32=ded4df78 mask=000000000000000000000000ff000000 dq_pos=000000000000000000000000de4cb09c time=1271712.0 ps
+# [CH1] DQS rise lane=2 dq64=ded4df78zzzzzzzz selected_dq32=ded4df78 mask=00000000000000000000000000ff0000 dq_pos=000000000000000000000000ded4b09c time=1271712.0 ps
+# [CH1] DQS rise lane=1 dq64=ded4df78zzzzzzzz selected_dq32=ded4df78 mask=0000000000000000000000000000ff00 dq_pos=000000000000000000000000ded4df9c time=1271712.0 ps
+# [CH1] DQS rise lane=0 dq64=ded4df78zzzzzzzz selected_dq32=ded4df78 mask=000000000000000000000000000000ff dq_pos=000000000000000000000000ded4df78 time=1271712.0 ps
+# [CH1] READ OUTPUT data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a dq_out=423cb27c burst_pos=5 time=1271712.0 ps
+# MEMORY MODEL DQS dq64=423cb27czzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1272024.0 ps
+# [CH1] DQS fall lane=3 dq64=423cb27czzzzzzzz selected_dq32=423cb27c mask=000000000000000000000000ff000000 dq_neg=000000000000000000000000427f9de5 time=1272024.0 ps
+# [CH1] DQS fall lane=2 dq64=423cb27czzzzzzzz selected_dq32=423cb27c mask=00000000000000000000000000ff0000 dq_neg=000000000000000000000000423c9de5 time=1272024.0 ps
+# [CH1] DQS fall lane=1 dq64=423cb27czzzzzzzz selected_dq32=423cb27c mask=0000000000000000000000000000ff00 dq_neg=000000000000000000000000423cb2e5 time=1272024.0 ps
+# [CH1] DQS fall lane=0 dq64=423cb27czzzzzzzz selected_dq32=423cb27c mask=000000000000000000000000000000ff dq_neg=000000000000000000000000423cb27c time=1272024.0 ps
+# [CH1] READ OUTPUT data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a dq_out=3f6475b0 burst_pos=6 time=1272024.0 ps
+# MEMORY MODEL DQS dq64=3f6475b0zzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=f dqs_c=0  time=1272336.0 ps
+# [CH1] DQS rise lane=3 dq64=3f6475b0zzzzzzzz selected_dq32=3f6475b0 mask=000000000000000000000000ff000000 dq_pos=0000000000000000000000003fd4df78 time=1272336.0 ps
+# [CH1] DQS rise lane=2 dq64=3f6475b0zzzzzzzz selected_dq32=3f6475b0 mask=00000000000000000000000000ff0000 dq_pos=0000000000000000000000003f64df78 time=1272336.0 ps
+# [CH1] DQS rise lane=1 dq64=3f6475b0zzzzzzzz selected_dq32=3f6475b0 mask=0000000000000000000000000000ff00 dq_pos=0000000000000000000000003f647578 time=1272336.0 ps
+# [CH1] DQS rise lane=0 dq64=3f6475b0zzzzzzzz selected_dq32=3f6475b0 mask=000000000000000000000000000000ff dq_pos=0000000000000000000000003f6475b0 time=1272336.0 ps
+# [CH1] READ OUTPUT data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a dq_out=b7a8d818 burst_pos=7 time=1272336.0 ps
+# [CTRL][DFI_RD1]  t=1273000.0 ps rddata_w0=9684409a rddata_w1=6390c8fb
+# MEMORY MODEL DQS dq64=b7a8d818zzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1272648.0 ps
+# [CH1] DQS fall lane=3 dq64=b7a8d818zzzzzzzz selected_dq32=b7a8d818 mask=000000000000000000000000ff000000 dq_neg=000000000000000000000000b73cb27c time=1272648.0 ps
+# [CH1] DQS fall lane=2 dq64=b7a8d818zzzzzzzz selected_dq32=b7a8d818 mask=00000000000000000000000000ff0000 dq_neg=000000000000000000000000b7a8b27c time=1272648.0 ps
+# [CH1] DQS fall lane=1 dq64=b7a8d818zzzzzzzz selected_dq32=b7a8d818 mask=0000000000000000000000000000ff00 dq_neg=000000000000000000000000b7a8d87c time=1272648.0 ps
+# [CH1] DQS fall lane=0 dq64=b7a8d818zzzzzzzz selected_dq32=b7a8d818 mask=000000000000000000000000000000ff dq_neg=000000000000000000000000b7a8d818 time=1272648.0 ps
+# [CH1] READ OUTPUT data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a dq_out=c5db1eb4 burst_pos=8 time=1272648.0 ps
+# MEMORY MODEL DQS dq64=c5db1eb4zzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=f dqs_c=0  time=1272960.0 ps
+# [CH1] DQS rise lane=3 dq64=c5db1eb4zzzzzzzz selected_dq32=c5db1eb4 mask=000000000000000000000000ff000000 dq_pos=000000000000000000000000c56475b0 time=1272960.0 ps
+# [CH1] DQS rise lane=2 dq64=c5db1eb4zzzzzzzz selected_dq32=c5db1eb4 mask=00000000000000000000000000ff0000 dq_pos=000000000000000000000000c5db75b0 time=1272960.0 ps
+# [CH1] DQS rise lane=1 dq64=c5db1eb4zzzzzzzz selected_dq32=c5db1eb4 mask=0000000000000000000000000000ff00 dq_pos=000000000000000000000000c5db1eb0 time=1272960.0 ps
+# [CH1] DQS rise lane=0 dq64=c5db1eb4zzzzzzzz selected_dq32=c5db1eb4 mask=000000000000000000000000000000ff dq_pos=000000000000000000000000c5db1eb4 time=1272960.0 ps
+# [CH1] READ OUTPUT data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a dq_out=aa61c4d1 burst_pos=9 time=1272960.0 ps
+# MEMORY MODEL DQS dq64=aa61c4d1zzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1273272.0 ps
+# [CH1] DQS fall lane=3 dq64=aa61c4d1zzzzzzzz selected_dq32=aa61c4d1 mask=000000000000000000000000ff000000 dq_neg=000000000000000000000000aaa8d818 time=1273272.0 ps
+# [CH1] DQS fall lane=2 dq64=aa61c4d1zzzzzzzz selected_dq32=aa61c4d1 mask=00000000000000000000000000ff0000 dq_neg=000000000000000000000000aa61d818 time=1273272.0 ps
+# [CH1] DQS fall lane=1 dq64=aa61c4d1zzzzzzzz selected_dq32=aa61c4d1 mask=0000000000000000000000000000ff00 dq_neg=000000000000000000000000aa61c418 time=1273272.0 ps
+# [CH1] DQS fall lane=0 dq64=aa61c4d1zzzzzzzz selected_dq32=aa61c4d1 mask=000000000000000000000000000000ff dq_neg=000000000000000000000000aa61c4d1 time=1273272.0 ps
+# [CH1] READ OUTPUT data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a dq_out=0b928c9b burst_pos=a time=1273272.0 ps
+# MEMORY MODEL DQS dq64=0b928c9bzzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=f dqs_c=0  time=1273584.0 ps
+# [CH1] DQS rise lane=3 dq64=0b928c9bzzzzzzzz selected_dq32=0b928c9b mask=000000000000000000000000ff000000 dq_pos=0000000000000000000000000bdb1eb4 time=1273584.0 ps
+# [CH1] DQS rise lane=2 dq64=0b928c9bzzzzzzzz selected_dq32=0b928c9b mask=00000000000000000000000000ff0000 dq_pos=0000000000000000000000000b921eb4 time=1273584.0 ps
+# [CH1] DQS rise lane=1 dq64=0b928c9bzzzzzzzz selected_dq32=0b928c9b mask=0000000000000000000000000000ff00 dq_pos=0000000000000000000000000b928cb4 time=1273584.0 ps
+# [CH1] DQS rise lane=0 dq64=0b928c9bzzzzzzzz selected_dq32=0b928c9b mask=000000000000000000000000000000ff dq_pos=0000000000000000000000000b928c9b time=1273584.0 ps
+# [CH1] READ OUTPUT data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a dq_out=5a22698f burst_pos=b time=1273584.0 ps
+# MEMORY MODEL DQS dq64=5a22698fzzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1273896.0 ps
+# [CH1] DQS fall lane=3 dq64=5a22698fzzzzzzzz selected_dq32=5a22698f mask=000000000000000000000000ff000000 dq_neg=0000000000000000000000005a61c4d1 time=1273896.0 ps
+# [CH1] DQS fall lane=2 dq64=5a22698fzzzzzzzz selected_dq32=5a22698f mask=00000000000000000000000000ff0000 dq_neg=0000000000000000000000005a22c4d1 time=1273896.0 ps
+# [CH1] DQS fall lane=1 dq64=5a22698fzzzzzzzz selected_dq32=5a22698f mask=0000000000000000000000000000ff00 dq_neg=0000000000000000000000005a2269d1 time=1273896.0 ps
+# [CH1] DQS fall lane=0 dq64=5a22698fzzzzzzzz selected_dq32=5a22698f mask=000000000000000000000000000000ff dq_neg=0000000000000000000000005a22698f time=1273896.0 ps
+# [CH1] READ OUTPUT data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a dq_out=0ee3bcdb burst_pos=c time=1273896.0 ps
+# MEMORY MODEL DQS dq64=0ee3bcdbzzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=f dqs_c=0  time=1274208.0 ps
+# [CH1] DQS rise lane=3 dq64=0ee3bcdbzzzzzzzz selected_dq32=0ee3bcdb mask=000000000000000000000000ff000000 dq_pos=0000000000000000000000000e928c9b time=1274208.0 ps
+# [CH1] DQS rise lane=2 dq64=0ee3bcdbzzzzzzzz selected_dq32=0ee3bcdb mask=00000000000000000000000000ff0000 dq_pos=0000000000000000000000000ee38c9b time=1274208.0 ps
+# [CH1] DQS rise lane=1 dq64=0ee3bcdbzzzzzzzz selected_dq32=0ee3bcdb mask=0000000000000000000000000000ff00 dq_pos=0000000000000000000000000ee3bc9b time=1274208.0 ps
+# [CH1] DQS rise lane=0 dq64=0ee3bcdbzzzzzzzz selected_dq32=0ee3bcdb mask=000000000000000000000000000000ff dq_pos=0000000000000000000000000ee3bcdb time=1274208.0 ps
+# [CH1] READ OUTPUT data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a dq_out=887a3696 burst_pos=d time=1274208.0 ps
+# MEMORY MODEL DQS dq64=887a3696zzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1274520.0 ps
+# [CH1] DQS fall lane=3 dq64=887a3696zzzzzzzz selected_dq32=887a3696 mask=000000000000000000000000ff000000 dq_neg=0000000000000000000000008822698f time=1274520.0 ps
+# [CH1] DQS fall lane=2 dq64=887a3696zzzzzzzz selected_dq32=887a3696 mask=00000000000000000000000000ff0000 dq_neg=000000000000000000000000887a698f time=1274520.0 ps
+# [CH1] DQS fall lane=1 dq64=887a3696zzzzzzzz selected_dq32=887a3696 mask=0000000000000000000000000000ff00 dq_neg=000000000000000000000000887a368f time=1274520.0 ps
+# [CH1] DQS fall lane=0 dq64=887a3696zzzzzzzz selected_dq32=887a3696 mask=000000000000000000000000000000ff dq_neg=000000000000000000000000887a3696 time=1274520.0 ps
+# [CH1] READ OUTPUT data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a dq_out=7de84d2e burst_pos=e time=1274520.0 ps
+# MEMORY MODEL DQS dq64=7de84d2ezzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=f dqs_c=0  time=1274832.0 ps
+# [CH1] DQS rise lane=3 dq64=7de84d2ezzzzzzzz selected_dq32=7de84d2e mask=000000000000000000000000ff000000 dq_pos=0000000000000000000000007de3bcdb time=1274832.0 ps
+# [CH1] DQS rise lane=2 dq64=7de84d2ezzzzzzzz selected_dq32=7de84d2e mask=00000000000000000000000000ff0000 dq_pos=0000000000000000000000007de8bcdb time=1274832.0 ps
+# [CH1] DQS rise lane=1 dq64=7de84d2ezzzzzzzz selected_dq32=7de84d2e mask=0000000000000000000000000000ff00 dq_pos=0000000000000000000000007de84ddb time=1274832.0 ps
+# [CH1] DQS rise lane=0 dq64=7de84d2ezzzzzzzz selected_dq32=7de84d2e mask=000000000000000000000000000000ff dq_pos=0000000000000000000000007de84d2e time=1274832.0 ps
+# [CH1] READ OUTPUT data=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a dq_out=a191c5f6 burst_pos=f time=1274832.0 ps
+# MEMORY MODEL DQS dq64=a191c5f6zzzzzzzz  CH0 dqs_t=z dqs_c=z  CH1 dqs_t=0 dqs_c=f  time=1275144.0 ps
+# [CH1] DQS fall lane=3 dq64=a191c5f6zzzzzzzz selected_dq32=a191c5f6 mask=000000000000000000000000ff000000 dq_neg=000000000000000000000000a17a3696 time=1275144.0 ps
+# [CH1] DQS fall lane=2 dq64=a191c5f6zzzzzzzz selected_dq32=a191c5f6 mask=00000000000000000000000000ff0000 dq_neg=000000000000000000000000a1913696 time=1275144.0 ps
+# [CH1] DQS fall lane=1 dq64=a191c5f6zzzzzzzz selected_dq32=a191c5f6 mask=0000000000000000000000000000ff00 dq_neg=000000000000000000000000a191c596 time=1275144.0 ps
+# [CH1] DQS fall lane=0 dq64=a191c5f6zzzzzzzz selected_dq32=a191c5f6 mask=000000000000000000000000000000ff dq_neg=000000000000000000000000a191c5f6 time=1275144.0 ps
+# [CH1] DQS rise lane=3 dq64=zzzzzzzzzzzzzzzz selected_dq32=zzzzzzzz mask=000000000000000000000000ff000000 dq_pos=000000000000000000000000xxxxxxxx time=1275456.0 ps
+# [CH1] DQS rise lane=2 dq64=zzzzzzzzzzzzzzzz selected_dq32=zzzzzzzz mask=00000000000000000000000000ff0000 dq_pos=000000000000000000000000xxxxxxxx time=1275456.0 ps
+# [CH1] DQS rise lane=1 dq64=zzzzzzzzzzzzzzzz selected_dq32=zzzzzzzz mask=0000000000000000000000000000ff00 dq_pos=000000000000000000000000xxxxxxxx time=1275456.0 ps
+# [CH1] DQS rise lane=0 dq64=zzzzzzzzzzzzzzzz selected_dq32=zzzzzzzz mask=000000000000000000000000000000ff dq_pos=000000000000000000000000xxxxxxxx time=1275456.0 ps
+# [CTRL][R]        t=1276000.0 ps rid=0 rdata=a191c5f67de84d2e887a36960ee3bcdb5a22698f0b928c9baa61c4d1c5db1eb4b7a8d8183f6475b0423cb27cded4df78027f9de53c4cb09c6390c8fb9684409a
+# SCOREBOARD PASS address=a5c3adb8 expected_data=9a actual_data=9a
+# SCOREBOARD PASS address=a5c3adb9 expected_data=40 actual_data=40
+# SCOREBOARD PASS address=a5c3adba expected_data=84 actual_data=84
+# SCOREBOARD PASS address=a5c3adbb expected_data=96 actual_data=96
+# SCOREBOARD PASS address=a5c3adbc expected_data=fb actual_data=fb
+# SCOREBOARD PASS address=a5c3adbd expected_data=c8 actual_data=c8
+# SCOREBOARD PASS address=a5c3adbe expected_data=90 actual_data=90
+# SCOREBOARD PASS address=a5c3adbf expected_data=63 actual_data=63
+# pass_cnt=          8 fail_cnt=          0
+# SCOREBOARD PASS address=a5c3adc0 expected_data=9c actual_data=9c
+# SCOREBOARD PASS address=a5c3adc1 expected_data=b0 actual_data=b0
+# SCOREBOARD PASS address=a5c3adc2 expected_data=4c actual_data=4c
+# SCOREBOARD PASS address=a5c3adc3 expected_data=3c actual_data=3c
+# SCOREBOARD PASS address=a5c3adc4 expected_data=e5 actual_data=e5
+# SCOREBOARD PASS address=a5c3adc5 expected_data=9d actual_data=9d
+# SCOREBOARD PASS address=a5c3adc6 expected_data=7f actual_data=7f
+# SCOREBOARD PASS address=a5c3adc7 expected_data=02 actual_data=02
+# pass_cnt=         16 fail_cnt=          0
+# SCOREBOARD PASS address=a5c3adc8 expected_data=78 actual_data=78
+# SCOREBOARD PASS address=a5c3adc9 expected_data=df actual_data=df
+# SCOREBOARD PASS address=a5c3adca expected_data=d4 actual_data=d4
+# SCOREBOARD PASS address=a5c3adcb expected_data=de actual_data=de
+# SCOREBOARD PASS address=a5c3adcc expected_data=7c actual_data=7c
+# SCOREBOARD PASS address=a5c3adcd expected_data=b2 actual_data=b2
+# SCOREBOARD PASS address=a5c3adce expected_data=3c actual_data=3c
+# SCOREBOARD PASS address=a5c3adcf expected_data=42 actual_data=42
+# pass_cnt=         24 fail_cnt=          0
+# SCOREBOARD PASS address=a5c3add0 expected_data=b0 actual_data=b0
+# SCOREBOARD PASS address=a5c3add1 expected_data=75 actual_data=75
+# SCOREBOARD PASS address=a5c3add2 expected_data=64 actual_data=64
+# SCOREBOARD PASS address=a5c3add3 expected_data=3f actual_data=3f
+# SCOREBOARD PASS address=a5c3add4 expected_data=18 actual_data=18
+# SCOREBOARD PASS address=a5c3add5 expected_data=d8 actual_data=d8
+# SCOREBOARD PASS address=a5c3add6 expected_data=a8 actual_data=a8
+# SCOREBOARD PASS address=a5c3add7 expected_data=b7 actual_data=b7
+# pass_cnt=         32 fail_cnt=          0
+# SCOREBOARD PASS address=a5c3add8 expected_data=b4 actual_data=b4
+# SCOREBOARD PASS address=a5c3add9 expected_data=1e actual_data=1e
+# SCOREBOARD PASS address=a5c3adda expected_data=db actual_data=db
+# SCOREBOARD PASS address=a5c3addb expected_data=c5 actual_data=c5
+# SCOREBOARD PASS address=a5c3addc expected_data=d1 actual_data=d1
+# SCOREBOARD PASS address=a5c3addd expected_data=c4 actual_data=c4
+# SCOREBOARD PASS address=a5c3adde expected_data=61 actual_data=61
+# SCOREBOARD PASS address=a5c3addf expected_data=aa actual_data=aa
+# pass_cnt=         40 fail_cnt=          0
+# SCOREBOARD PASS address=a5c3ade0 expected_data=9b actual_data=9b
+# SCOREBOARD PASS address=a5c3ade1 expected_data=8c actual_data=8c
+# SCOREBOARD PASS address=a5c3ade2 expected_data=92 actual_data=92
+# SCOREBOARD PASS address=a5c3ade3 expected_data=0b actual_data=0b
+# SCOREBOARD PASS address=a5c3ade4 expected_data=8f actual_data=8f
+# SCOREBOARD PASS address=a5c3ade5 expected_data=69 actual_data=69
+# SCOREBOARD PASS address=a5c3ade6 expected_data=22 actual_data=22
+# SCOREBOARD PASS address=a5c3ade7 expected_data=5a actual_data=5a
+# pass_cnt=         48 fail_cnt=          0
+# SCOREBOARD PASS address=a5c3ade8 expected_data=db actual_data=db
+# SCOREBOARD PASS address=a5c3ade9 expected_data=bc actual_data=bc
+# SCOREBOARD PASS address=a5c3adea expected_data=e3 actual_data=e3
+# SCOREBOARD PASS address=a5c3adeb expected_data=0e actual_data=0e
+# SCOREBOARD PASS address=a5c3adec expected_data=96 actual_data=96
+# SCOREBOARD PASS address=a5c3aded expected_data=36 actual_data=36
+# SCOREBOARD PASS address=a5c3adee expected_data=7a actual_data=7a
+# SCOREBOARD PASS address=a5c3adef expected_data=88 actual_data=88
+# pass_cnt=         56 fail_cnt=          0
+# SCOREBOARD PASS address=a5c3adf0 expected_data=2e actual_data=2e
+# SCOREBOARD PASS address=a5c3adf1 expected_data=4d actual_data=4d
+# SCOREBOARD PASS address=a5c3adf2 expected_data=e8 actual_data=e8
+# SCOREBOARD PASS address=a5c3adf3 expected_data=7d actual_data=7d
+# SCOREBOARD PASS address=a5c3adf4 expected_data=f6 actual_data=f6
+# SCOREBOARD PASS address=a5c3adf5 expected_data=c5 actual_data=c5
+# SCOREBOARD PASS address=a5c3adf6 expected_data=91 actual_data=91
+# SCOREBOARD PASS address=a5c3adf7 expected_data=a1 actual_data=a1
+# pass_cnt=         64 fail_cnt=          0
+# [CTRL][CMD_CH1]  t=1288000.0 ps cmd=CMD_PRE bg=3 ba=2 row=0 col=0
+# [CH1] PREpb bank=14 at 1288248.0 ps
+# [CTRL][CMD_CH0]  t=3084000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=3084000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 3084120.0 ps
+# [CH1] REFab at 3084120.0 ps
+# [CTRL][CMD_CH0]  t=3381000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=3381000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 3381768.0 ps
+# [CH1] REFab at 3381768.0 ps
+# [CTRL][CMD_CH0]  t=3679000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=3679000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 3679416.0 ps
+# [CH1] REFab at 3679416.0 ps
+# [CTRL][CMD_CH0]  t=3976000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=3976000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 3977064.0 ps
+# [CH1] REFab at 3977064.0 ps
+# [CTRL][CMD_CH0]  t=4274000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=4274000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 4274088.0 ps
+# [CH1] REFab at 4274088.0 ps
+# [CTRL][CMD_CH0]  t=4571000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=4571000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 4571736.0 ps
+# [CH1] REFab at 4571736.0 ps
+# [CTRL][CMD_CH0]  t=4869000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=4869000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 4869384.0 ps
+# [CH1] REFab at 4869384.0 ps
+# [CTRL][CMD_CH0]  t=5166000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=5166000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 5167032.0 ps
+# [CH1] REFab at 5167032.0 ps
+# [CTRL][CMD_CH0]  t=6984000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=6984000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 6984120.0 ps
+# [CH1] REFab at 6984120.0 ps
+# [CTRL][CMD_CH0]  t=7281000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=7281000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 7281768.0 ps
+# [CH1] REFab at 7281768.0 ps
+# [CTRL][CMD_CH0]  t=7579000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=7579000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 7579416.0 ps
+# [CH1] REFab at 7579416.0 ps
+# [CTRL][CMD_CH0]  t=7876000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=7876000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 7877064.0 ps
+# [CH1] REFab at 7877064.0 ps
+# [CTRL][CMD_CH0]  t=8174000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=8174000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 8174088.0 ps
+# [CH1] REFab at 8174088.0 ps
+# [CTRL][CMD_CH0]  t=8471000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=8471000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 8471736.0 ps
+# [CH1] REFab at 8471736.0 ps
+# [CTRL][CMD_CH0]  t=8769000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=8769000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 8769384.0 ps
+# [CH1] REFab at 8769384.0 ps
+# [CTRL][CMD_CH0]  t=9066000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=9066000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 9067032.0 ps
+# [CH1] REFab at 9067032.0 ps
+# [CTRL][CMD_CH0]  t=10884000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CTRL][CMD_CH1]  t=10884000.0 ps cmd=CMD_REFAB bg=0 ba=0 row=0 col=0
+# [CH0] REFab at 10884120.0 ps
+# [CH1] REFab at 10884120.0 ps
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :    5
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [VSEQ]     2
+# ** Note: $finish    : C:/questasim_10.4e/win32/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 11155 ns  Iteration: 96  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at C:/questasim_10.4e/win32/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# End time: 10:44:05 on Jun 19,2026, Elapsed time: 0:03:21
+# Errors: 0, Warnings: 0
