@@ -138,7 +138,7 @@ module top;
 		logic [1:0]  dut_rresp;
 		logic        dut_rlast;
 
-		initial dch = 1'b1;
+		initial dch = 1'b0;
 
 		assign dram_if.ck_t    = {phy_ck1_t, phy_ck0_t};
 		assign dram_if.ck_c    = {phy_ck1_c, phy_ck0_c};
@@ -506,7 +506,6 @@ module axi64_to_dut512_bridge (
 
 			if (s_wvalid && s_wready) begin
 				pack_data[wr_count*64 +: 64] <= s_wdata;
-				$display("[AXI 64 to 512 bridge] pack_data is %0h wr_count is %0d at time %0t",pack_data,wr_count,$time);
 				pack_strb[wr_count*8 +: 8] <= s_wstrb;
 				if (wr_count == wr_len[2:0] || s_wlast || wr_count == 3'd7) begin
 					send_wr <= 1'b1;
@@ -514,6 +513,8 @@ module axi64_to_dut512_bridge (
 				end else begin
 					wr_count <= wr_count + 3'd1;
 				end
+				$display("[AXI 64 to 512 bridge] pack_data is %0h wr_count is %0d at time %0t",pack_data,wr_count,$time);
+
 			end
 
 			if (m_awvalid && m_awready) begin

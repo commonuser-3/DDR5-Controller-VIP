@@ -201,8 +201,8 @@ class single_wr_rd_with_narrow_sequence extends axi_sequence;
         `uvm_create(wr_tx);
         assert(wr_tx.randomize() with {
             wr_rd == WRITE_ONLY;
-           // awaddr == 'haaf7ef; // awaddr[2:0] = BA    awaddr[16:3]=RA awaddr[26:17]=CA
-            awlen < 7;  
+            awaddr == 0;
+            awlen ==4 ;  
             awsize == 3;
             awburst == 1;
             wid == wr_tx.awid;
@@ -215,8 +215,8 @@ class single_wr_rd_with_narrow_sequence extends axi_sequence;
         `uvm_create(rd_tx);
         assert(rd_tx.randomize() with {            //read transaction 
             wr_rd == READ_ONLY;
-            araddr == tx[0].awaddr;              //precharge all bank 
-            arlen == tx[0].awlen;
+            araddr == 0;               
+            arlen == 4;
             arsize == 3;
             arburst == 1;
         });

@@ -185,7 +185,7 @@ class axi_pcie_master_driver extends uvm_driver#(axi_tx);
                     for(int i=0; i<=req.awlen; i=i+1)begin 
                        // @(posedge vif.aclk);
                         vif.wdata<=req.wdata.pop_back();
-                        vif.wid<= req.wid;
+			                        vif.wid<= req.wid;
                         vif.wvalid<=1;
             //            $display("inside the write_datachannel wvalid=%0d time=%0t",vif.wvalid,$time);
 
@@ -233,6 +233,8 @@ class axi_pcie_master_driver extends uvm_driver#(axi_tx);
 
                             wait(vif.wready==1);
                             @(posedge vif.aclk);
+			    $display("[AXI DVR] beat = %0d Wdata is %0h",i,vif.wdata);
+
                             vif.wlast <= 0;
                             vif.wvalid<=0;
                         

@@ -284,6 +284,7 @@ module axi_slave1_module #(
 */
                 // ---- write response ----
                 @(posedge clk);
+		
                 if (s_bready) begin
                     s_bvalid <= 1;
                     s_bid    <= s_wid;
@@ -291,6 +292,7 @@ module axi_slave1_module #(
                     $display("[AXI1] BRESP OK ID=%0d", s_wid);
 	        end
                 wr_tx_valid[s_wid] = 0;
+		$display("[AXI DDR5 FE] Recived 512 bits of data from AXI is %0h",wr_data_packed);
             end
 
             // ===========================================================
